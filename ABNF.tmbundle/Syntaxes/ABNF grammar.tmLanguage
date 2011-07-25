@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gram</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>\(</string>
+	<key>foldingStopMarker</key>
+	<string>\)</string>
+	<key>name</key>
+	<string>ABNF grammar</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\/\*.+\*\/</string>
+			<key>name</key>
+			<string>comment.ABNF</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\$\w+</string>
+			<key>name</key>
+			<string>variable.other.ABNF</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>#.+</string>
+			<key>name</key>
+			<string>keyword.other.directive.ABNF</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\d+\.?\d*</string>
+			<key>name</key>
+			<string>constant.numeric.ABNF</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>"(?:\.|(\\\")|[^\""\n])*"</string>
+			<key>name</key>
+			<string>string.quoted.ABNF</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>mode|root|mode|tag-format|language</string>
+			<key>name</key>
+			<string>keyword.ABNF</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>public|protected|meta</string>
+			<key>name</key>
+			<string>entity.name.module.ABNF</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\(|\);|\{|\}|\[|\]</string>
+			<key>name</key>
+			<string>keyword.control.ABNF</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.abnf</string>
+	<key>uuid</key>
+	<string>2A0968A5-EDFA-488A-AC21-4DB89B1D9A31</string>
+</dict>
+</plist>
